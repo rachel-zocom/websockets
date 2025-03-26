@@ -37,8 +37,7 @@ Användare kan ansluta, skicka meddelanden och se när andra skriver.
 chat-app/
 │── static/              # Frontend-filer (HTML, CSS, JS)
 │   ├── index.html       # Huvudsida
-│   ├── style.css        # Stilmall
-│   ├── client.js        # Klientsidan för Socket.IO
+│   ├── style.css        # Stilmall      
 │── server.js            # Huvudserverfilen
 │── package.json         # Projektberoenden
 │── README.md            # Dokumentation

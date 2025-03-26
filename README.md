@@ -34,7 +34,7 @@ Användare kan ansluta, skicka meddelanden och se när andra skriver.
 
 ## 📜 Projektstruktur
 ```
-chat-app/
+simple-chat/
 │── static/              # Frontend-filer (HTML, CSS, JS)
 │   ├── index.html       # Huvudsida
 │   ├── style.css        # Stilmall      

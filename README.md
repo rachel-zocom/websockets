@@ -18,8 +18,8 @@ Användare kan ansluta, skicka meddelanden och se när andra skriver.
 ## 🔧 Installation och körning
 1. **Kloning av repository**
    ```sh
-   git clone https://github.com/ditt-repo/chat-app.git
-   cd chat-app
+   git clone https://github.com/ditt-repo/websockets.git
+   cd websockets
    ```
 2. **Installera beroenden**
    ```sh

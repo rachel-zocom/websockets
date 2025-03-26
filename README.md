@@ -54,6 +54,4 @@ chat-app/
 - Användarhantering med autentisering
 - Meddelandeloggning med databas
 
-## 📄 Licens
-MIT License. Fritt att använda och modifiera! ✨
 

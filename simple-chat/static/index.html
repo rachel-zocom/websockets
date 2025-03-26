@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chattapplikation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Enkel chattapplikation 🚀</h2>
+    </header>
+
+    <main>
+      <div id="chat-container">
+        <section id="messages-container">
+          <ul id="messages"></ul>
+        </section>
+        <form id="form" action="">
+          <input
+            id="input"
+            autocomplete="off"
+            placeholder="Skriv ditt meddelande här..."
+          />
+          <button>Skicka</button>
+        </form>
+      </div>
+    </main>
+    <!-- Inkluderar Socket.IO biblioteket -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      // Skapar en Socket.IO-anslutning till servern
+      const socket = io();
+
+      // Hittar HTML-elementen
+      const form = document.getElementById("form"); // Formulär
+      const input = document.getElementById("input"); // Input-fältet
+      const messages = document.getElementById("messages"); // Listan för meddelanden
+
+      // Lyssnar efter när formuläret skickas
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // Förhindrar standard beteende av formuläret (att sidan laddas om)
+        if (input.value) {
+          // Kontrollerar att input-fältet inte är tomt
+          // Skickar meddelandet till servern med Socket.IO
+          socket.emit("chat message", input.value);
+          input.value = ""; // Återställer input-fältet
+        }
+      });
+
+      // Lyssnar på inkommande meddelanden från servern
+      socket.on("chat message", (msg) => {
+        // Skapar ett nytt li-element för att visa meddelandet
+        const item = document.createElement("li");
+        item.textContent = msg; // Lägger till meddelandetexten i li-elementet
+        messages.appendChild(item); // Lägger till li-elementet i meddelandelistan
+        // Skrollar till slutet av meddelandelistan för att visa det senaste meddelandet
+        window.scrollTo(0, document.body.scrollHeight);
+      });
+    </script>
+  </body>
+</html>

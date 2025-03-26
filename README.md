@@ -39,6 +39,7 @@ chat-app/
 │   ├── index.html       # Huvudsida
 │   ├── style.css        # Stilmall      
 │── server.js            # Huvudserverfilen
+│── index.js             # Hanterar klientsidan
 │── package.json         # Projektberoenden
 │── README.md            # Dokumentation
 ```

@@ -1,49 +1,39 @@
-Enkel Chattapplikation 🚀
+# Enkel Chattapplikation 🚀
 
-Detta är en enkel realtidschattapplikation byggd med Node.js, Express, och Socket.IO.
+Detta är en enkel realtidschattapplikation byggd med **Node.js**, **Express**, och **Socket.IO**.
 Användare kan ansluta, skicka meddelanden och se när andra skriver.
 
-📌 Funktioner
+## 📌 Funktioner
+- Realtidskommunikation med **Socket.IO**
+- Användaranslutning och frånkoppling
+- Meddelanden visas direkt för alla användare
+- "Användaren skriver..."-indikator
 
-Realtidskommunikation med Socket.IO
+## 🛠 Tekniker som används
+- **Node.js** – Servermiljö
+- **Express.js** – Webbramverk
+- **Socket.IO** – WebSocket-baserad realtidskommunikation
+- **HTML/CSS/JavaScript** – Frontend
 
-Användaranslutning och frånkoppling
+## 🔧 Installation och körning
+1. **Kloning av repository**
+   ```sh
+   git clone https://github.com/ditt-repo/chat-app.git
+   cd chat-app
+   ```
+2. **Installera beroenden**
+   ```sh
+   npm install
+   ```
+3. **Starta servern**
+   ```sh
+   npm start
+   ```
+4. **Öppna applikationen**
+   - Gå till `http://localhost:3000` i din webbläsare.
 
-Meddelanden visas direkt för alla användare
-
-"Användaren skriver..."-indikator
-
-🛠 Tekniker som används
-
-Node.js – Servermiljö
-
-Express.js – Webbramverk
-
-Socket.IO – WebSocket-baserad realtidskommunikation
-
-HTML/CSS/JavaScript – Frontend
-
-🔧 Installation och körning
-
-Kloning av repository
-
-git clone https://github.com/ditt-repo/chat-app.git
-cd chat-app
-
-Installera beroenden
-
-npm install
-
-Starta servern
-
-npm start
-
-Öppna applikationen
-
-Gå till http://localhost:3000 i din webbläsare.
-
-📜 Projektstruktur
-
+## 📜 Projektstruktur
+```
 chat-app/
 │── static/              # Frontend-filer (HTML, CSS, JS)
 │   ├── index.html       # Huvudsida
@@ -52,24 +42,18 @@ chat-app/
 │── server.js            # Huvudserverfilen
 │── package.json         # Projektberoenden
 │── README.md            # Dokumentation
+```
 
-📌 Användning
+## 📌 Användning
+1. Öppna applikationen i webbläsaren.
+2. Ange ett användarnamn och gå med i chatten.
+3. Börja chatta med andra användare i realtid!
 
-Öppna applikationen i webbläsaren.
+## 🚀 Kommande förbättringar
+- Stöd för flera chattrum
+- Användarhantering med autentisering
+- Meddelandeloggning med databas
 
-Ange ett användarnamn och gå med i chatten.
-
-Börja chatta med andra användare i realtid!
-
-🚀 Kommande förbättringar
-
-Stöd för flera chattrum
-
-Användarhantering med autentisering
-
-Meddelandeloggning med databas
-
-📄 Licens
-
+## 📄 Licens
 MIT License. Fritt att använda och modifiera! ✨
 
